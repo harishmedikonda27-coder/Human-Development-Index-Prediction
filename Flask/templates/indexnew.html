@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Prediction</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .container{
+            width:500px;
+            background:#fff;
+            padding:35px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,.3);
+        }
+
+        h2{
+            text-align:center;
+            color:#1e3c72;
+            margin-bottom:25px;
+        }
+
+        label{
+            font-weight:bold;
+            color:#333;
+            display:block;
+            margin-top:15px;
+            margin-bottom:6px;
+        }
+
+        select,
+        input{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:15px;
+        }
+
+        button{
+            width:100%;
+            margin-top:25px;
+            padding:12px;
+            background:#1e3c72;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:17px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#16325c;
+        }
+
+        .back{
+            display:block;
+            text-align:center;
+            margin-top:18px;
+            text-decoration:none;
+            color:#1e3c72;
+            font-weight:bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Human Development Index Prediction</h2>
+
+<form action="/predict" method="POST">
+
+<label>Country</label>
+
+<select name="country" required>
+
+<option value="">Select Country</option>
+
+<option value="0">Afghanistan</option>
+<option value="1">Albania</option>
+<option value="2">Algeria</option>
+<option value="3">Argentina</option>
+<option value="4">Australia</option>
+<option value="5">Bangladesh</option>
+<option value="6">Belgium</option>
+<option value="7">Brazil</option>
+<option value="8">Canada</option>
+<option value="9">China</option>
+<option value="10">France</option>
+<option value="11">Germany</option>
+<option value="12">India</option>
+<option value="13">Indonesia</option>
+<option value="14">Italy</option>
+<option value="15">Japan</option>
+<option value="16">Mexico</option>
+<option value="17">Nepal</option>
+<option value="18">Pakistan</option>
+<option value="19">Russia</option>
+<option value="20">Singapore</option>
+<option value="21">South Africa</option>
+<option value="22">Sri Lanka</option>
+<option value="23">United Kingdom</option>
+<option value="24">United States</option>
+
+</select>
+
+<label>Life Expectancy at Birth</label>
+
+<input
+type="number"
+name="life"
+step="0.01"
+placeholder="Example: 72.5"
+required>
+
+<label>Expected Years of Schooling</label>
+
+<input
+type="number"
+name="expected"
+step="0.01"
+placeholder="Example: 16.5"
+required>
+
+<label>Mean Years of Schooling</label>
+
+<input
+type="number"
+name="mean"
+step="0.01"
+placeholder="Example: 11.2"
+required>
+
+<label>Gross National Income Per Capita</label>
+
+<input
+type="number"
+name="gni"
+step="0.01"
+placeholder="Example: 25000"
+required>
+
+<button type="submit">
+
+Predict HDI
+
+</button>
+
+</form>
+
+<a href="/" class="back">← Back to Home</a>
+
+</div>
+
+</body>
+</html>

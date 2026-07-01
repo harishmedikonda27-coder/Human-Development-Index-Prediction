@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Development Index Predictor</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            width:80%;
+            max-width:900px;
+            background:#fff;
+            border-radius:15px;
+            padding:40px;
+            box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .top-bar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+        }
+
+        .title{
+            color:#1e3c72;
+            font-size:32px;
+            font-weight:bold;
+        }
+
+        .btn{
+            background:#1e3c72;
+            color:white;
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#16325c;
+        }
+
+        h2{
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        p{
+            color:#555;
+            line-height:1.8;
+            font-size:17px;
+            text-align:justify;
+            margin-bottom:18px;
+        }
+
+        ul{
+            margin-left:25px;
+            color:#444;
+            line-height:2;
+            font-size:17px;
+        }
+
+        footer{
+            margin-top:35px;
+            text-align:center;
+            color:gray;
+            font-size:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <div class="title">
+            HDI Predictor
+        </div>
+
+        <a href="/prediction" class="btn">
+            Predict
+        </a>
+    </div>
+
+    <h2>Human Development Index (HDI)</h2>
+
+    <p>
+        The Human Development Index (HDI) is a statistical measure developed by
+        the United Nations Development Programme (UNDP) to evaluate the overall
+        development of countries. It combines three major dimensions of human
+        development:
+    </p>
+
+    <ul>
+        <li>Life Expectancy at Birth</li>
+        <li>Expected Years of Schooling</li>
+        <li>Mean Years of Schooling</li>
+        <li>Gross National Income (GNI) Per Capita</li>
+    </ul>
+
+    <p>
+        This web application uses a Machine Learning model built with Linear
+        Regression to estimate the Human Development Index based on the values
+        entered by the user.
+    </p>
+
+    <p>
+        Click the <strong>Predict</strong> button to enter the country details
+        and generate the predicted HDI score along with its development category.
+    </p>
+
+    <footer>
+        Human Development Index Prediction using Machine Learning | Flask Project
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Prediction Result</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .container{
+            width:550px;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            color:#1e3c72;
+            margin-bottom:25px;
+        }
+
+        .score{
+            font-size:40px;
+            color:#28a745;
+            font-weight:bold;
+            margin:20px 0;
+        }
+
+        .category{
+            font-size:22px;
+            color:#444;
+            margin-bottom:30px;
+        }
+
+        .info{
+            background:#f4f4f4;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:30px;
+            line-height:1.8;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#1e3c72;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#16325c;
+        }
+
+        footer{
+            margin-top:25px;
+            color:gray;
+            font-size:14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Prediction Result</h1>
+
+    <div class="info">
+
+        <h3>Predicted Human Development Index</h3>
+
+        <div class="score">
+            {{ prediction }}
+        </div>
+
+        <div class="category">
+            <strong>Category:</strong><br>
+            {{ category }}
+        </div>
+
+    </div>
+
+    <a href="/prediction" class="btn">
+        Predict Again
+    </a>
+
+    <br><br>
+
+    <a href="/" class="btn">
+        Home
+    </a>
+
+    <footer>
+        Human Development Index Prediction using Machine Learning and Flask
+    </footer>
+
+</div>
+
+</body>
+</html>
