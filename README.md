@@ -205,8 +205,14 @@ http://127.0.0.1:5000
 Add screenshots here after uploading.
 
 - Home Page
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/c8daf7ca-a75b-47a7-9e73-ca6e324b3cdf" />
+
 - Prediction Page
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/8ce83345-7c69-40cb-bec9-6cdd001b2988" />
+
 - Result Page
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3b1ce478-0ce5-4539-9d68-38c664577ba8" />
+
 
 ---
 
