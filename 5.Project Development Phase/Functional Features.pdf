@@ -1,0 +1,39 @@
+# Functional Features
+
+The Human Development Index (HDI) Prediction System provides the following features:
+
+## Home Page
+
+* Displays an introduction to the Human Development Index.
+* Allows users to navigate to the prediction page.
+
+## Prediction Module
+
+* Accepts the following user inputs:
+
+  * Country
+  * Life Expectancy
+  * Expected Years of Schooling
+  * Mean Years of Schooling
+  * Gross National Income (GNI) per Capita
+* Validates the entered values before prediction.
+
+## Machine Learning Prediction
+
+* Loads the trained Linear Regression model.
+* Predicts the Human Development Index (HDI) score.
+
+## Result Display
+
+* Displays the predicted HDI score.
+* Displays the Human Development category:
+
+  * Very High Human Development
+  * High Human Development
+  * Medium Human Development
+  * Low Human Development
+
+## Deployment
+
+* Integrated with a Flask web application.
+* Successfully deployed using Render.

@@ -1,0 +1,13 @@
+Human Development Index Prediction
+│
+├── Requirement Analysis
+├── Dataset Collection
+├── Data Preprocessing
+├── Feature Selection
+├── Model Training
+├── Model Saving
+├── Flask Development
+├── Frontend Development
+├── Testing
+├── Deployment
+└── Documentation

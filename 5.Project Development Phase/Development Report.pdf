@@ -1,0 +1,52 @@
+# Development Report
+
+## Project Title
+
+Human Development Index (HDI) Prediction using Machine Learning
+
+## Frontend
+
+* HTML5
+* CSS3
+
+## Backend
+
+* Flask (Python)
+
+## Machine Learning
+
+* Linear Regression
+* Scikit-learn
+
+## Dataset
+
+* Human Development Index (HDI) Dataset
+
+## Python Libraries
+
+* Flask
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Pickle
+
+## Development Workflow
+
+1. Collected the HDI dataset.
+2. Performed data preprocessing.
+3. Conducted Exploratory Data Analysis (EDA).
+4. Selected relevant features.
+5. Trained the Linear Regression model.
+6. Evaluated model performance.
+7. Saved the trained model using Pickle.
+8. Developed the Flask web application.
+9. Connected the Machine Learning model with the Flask backend.
+10. Designed the HTML user interface.
+11. Tested the application.
+12. Deployed the application using Render.
+
+## Final Outcome
+
+The project successfully predicts the Human Development Index (HDI) score using user-provided socio-economic indicators and displays the corresponding Human Development category through a user-friendly web interface.
